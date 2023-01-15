@@ -14,7 +14,8 @@ const MyTabs = () => {
         headerShown: false,
         activeTintColor: '#e91e63',
       }}
-      initialRouteName="Home Screen">
+      // initialRouteName="Home"
+    >
       <Tab.Screen
         name="Home"
         component={Home}

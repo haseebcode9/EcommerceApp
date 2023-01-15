@@ -2,14 +2,16 @@ import React from 'react';
 import {Appbar} from 'react-native-paper';
 
 const CustomHeader = props => {
-  const {title, navigation} = props;
+  const {title, navigation, iconName = 'menu'} = props;
 
-  const _handleSearch = () => navigation.openDrawer();
+  const _handleSearch = () =>
+    iconName == 'keyboard-backspace'
+      ? navigation.goBack()
+      : navigation.openDrawer();
 
   return (
     <Appbar.Header>
-      {/* <Appbar.BackAction onPress={_goBack} /> */}
-      <Appbar.Action icon="menu" onPress={_handleSearch} />
+      <Appbar.Action icon={iconName} onPress={_handleSearch} />
       <Appbar.Content title={title} />
     </Appbar.Header>
   );

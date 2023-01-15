@@ -1,4 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit';
+import {createSlice, current} from '@reduxjs/toolkit';
 // import {Item} from 'react-native-paper/lib/typescript/components/Drawer/Drawer';
 
 const MyCartSlice = createSlice({
@@ -7,6 +7,7 @@ const MyCartSlice = createSlice({
   reducers: {
     addProductToMyCart(state, action) {
       let myindex = -1;
+      console.log(current(state));
       state.map((item, index) => {
         if (item.id == action.payload.id) {
           myindex = index;

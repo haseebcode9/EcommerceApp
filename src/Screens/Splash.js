@@ -8,7 +8,7 @@ const Splash = () => {
   useEffect(() => {
     setTimeout(() => {
       storeData();
-    }, 5000);
+    }, 1000);
   }, []);
 
   const storeData = async () => {

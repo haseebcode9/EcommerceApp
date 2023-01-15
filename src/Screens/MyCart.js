@@ -127,22 +127,7 @@ const MyCart = props => {
           }}
         />
       </View>
-      <View style={{marginTop: 20}}>
-        <TouchableOpacity
-          style={{
-            backgroundColor: 'green',
-            justifyContent: 'center',
-            alignItems: 'center',
-            borderRadius: 7,
-            height: 20,
-            width: 90,
-          }}
-          onPress={() => {
-            navigation.navigate('HeadphonesScreen');
-          }}>
-          <Text style={{color: '#fff'}}>{'< Go Back'}</Text>
-        </TouchableOpacity>
-      </View>
+      <View style={{marginTop: 20}}></View>
     </View>
   );
 };

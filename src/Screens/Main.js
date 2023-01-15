@@ -17,7 +17,7 @@ const items = [
     qty: 0,
     brand: 'SONY',
     productName: 'Sony Truely Wireless Headpnone',
-    productPrice: 6799,
+    productPrice: 999,
     productImage: require('../ProductImages/Headphone2.webp'),
   },
   {
